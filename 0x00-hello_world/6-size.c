@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int mai((void)
+int main(void)
 {
 	int a;
 	long int b;
