@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _abs - Computes the absolute value of an inter.
+
  * @c: The number to be computed.
  *
  * REturn: Absolute value of number or zero
