@@ -1,4 +1,4 @@
-#include <stio.h>
+#include <stdio.h>
 /**
  * numLength - returns the length of string
  * @num: Operand number
