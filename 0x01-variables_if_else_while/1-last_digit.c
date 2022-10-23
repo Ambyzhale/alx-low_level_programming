@@ -1,15 +1,20 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * int main - assigns random number to variable n .
+ * Return: 0
+ *
+ */
 int main(void)
 {
-	int n; m;
+	int n;
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-        m = n % 10;
+	m = n % 10;
+
 	if (m > 5)
 	{
 	printf("last digit of %d is %d and is greater than 5\n", n, m);
