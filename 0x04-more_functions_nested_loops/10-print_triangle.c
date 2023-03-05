@@ -1,14 +1,13 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
-  * print_triangle - Prints a triangle of squares according parameter
-  * @size: The size of the squares triangle
-  *
-  * Return: empty
-  */
+ * print_triangle - a function that prints a triangle
+ * @size: size of the triangle
+ * Return: triangle of '#'s
+ */
 void print_triangle(int size)
 {
-	int x, y, z;
+	int sp, ro, tr;
 
 	if (size <= 0)
 	{
@@ -16,20 +15,17 @@ void print_triangle(int size)
 	}
 	else
 	{
-		for (x = 0; x < size; x++)
+		for (ro = 0; ro <= (size - 1); ro++)
 		{
-			for (y = size - x; y > 1; y--)
+			for (sp = 0; sp < (size - 1) - ro; sp++)
 			{
-				_putchar(32);
+				_putchar(' ');
 			}
-
-			for (z = 0; z <= x; z++)
+			for (tr = 0; tr <= ro; tr++)
 			{
-				_putchar(35);
+				_putchar('#');
 			}
-
 			_putchar('\n');
 		}
 	}
 }
-

@@ -1,30 +1,24 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
-  * print_diagonal - Draws a diagonal lines according parameter
-  * @n: The number of times to print diagonal lines
-  *
-  * Return: empty
-  */
+ * print_diagonal - a function that draws a diagonal line on the terminal
+ * @n: length of diagonal
+ *
+ * Return: void
+ */
 void print_diagonal(int n)
 {
-	int x, y;
+	int a, b;
 
 	if (n <= 0)
-	{
 		_putchar('\n');
-	}
-	else
+	for (a = 0; a < n; a++)
 	{
-		for (x = 0; x < n; x++)
+		for (b = 0; b < a; b++)
 		{
-			for (y = 0; y < x; y++)
-			{
-				_putchar(32);
-			}
-
-			_putchar(92);
-			_putchar('\n');
+			_putchar(' ');
 		}
+		_putchar('\\');
+		_putchar('\n');
 	}
 }
