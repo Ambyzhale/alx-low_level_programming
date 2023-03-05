@@ -1,13 +1,14 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_diagonal -  a function that draws a diagonal line on the terminal
- * @n: input number of times '\' should be printed
- * Return: a diagonal
- */
+  * print_diagonal - Draws a diagonal lines according parameter
+  * @n: The number of times to print diagonal lines
+  *
+  * Return: empty
+  */
 void print_diagonal(int n)
 {
-	int co, sp;
+	int x, y;
 
 	if (n <= 0)
 	{
@@ -15,13 +16,14 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (co = 1; co <= n; co++)
+		for (x = 0; x < n; x++)
 		{
-			for (sp = 1; sp < co; sp++)
+			for (y = 0; y < x; y++)
 			{
-				_putchar(' ');
+				_putchar(32);
 			}
-			_putchar('\\');
+
+			_putchar(92);
 			_putchar('\n');
 		}
 	}

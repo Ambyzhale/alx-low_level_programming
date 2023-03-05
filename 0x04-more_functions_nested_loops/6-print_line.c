@@ -1,13 +1,14 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_line - a function that draws a straight line in the terminal
- * @n: input number of times to print '_'
- * Return: a straight line
- */
+  * print_line - Draws a straight line according to parameter
+  * @n: The number of lines to draw
+  *
+  * Return: empty
+  */
 void print_line(int n)
 {
-	int co;
+	int x;
 
 	if (n <= 0)
 	{
@@ -15,10 +16,12 @@ void print_line(int n)
 	}
 	else
 	{
-		for (co = 1; co <= n; co++)
+		for (x = 0; x < n; x++)
 		{
-			_putchar('_');
+			_putchar(95);
 		}
+
 		_putchar('\n');
 	}
 }
+
